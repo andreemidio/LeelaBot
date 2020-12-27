@@ -10,7 +10,7 @@ h2==3.2.0
 hpack==3.0.0
 hstspreload==2020.8.8
 httpcore==0.9.1
-httptools @ file:///home/conda/feedstock_root/build_artifacts/httptools_1602325995818/work
+httptools
 httpx==0.13.3
 hyperframe==5.2.0
 pycparser==2.20
