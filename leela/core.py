@@ -10,7 +10,7 @@ def start(update, context):
 
 def main():
     PORT = int(os.environ.get('PORT', 5000))
-    updater = Updater(token=, use_context=True)
+    updater = Updater(token=TOKEN, use_context=True)
     dispatcher = updater.dispatcher
 
     start_handler = CommandHandler('start', start)

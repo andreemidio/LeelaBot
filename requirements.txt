@@ -1,0 +1,30 @@
+beautifulsoup4==4.9.1
+certifi==2020.12.5
+cffi==1.14.1
+click==7.1.2
+cryptography==3.0
+decorator==4.4.2
+fastapi==0.63.0
+h11==0.9.0
+h2==3.2.0
+hpack==3.0.0
+hstspreload==2020.8.8
+httpcore==0.9.1
+httptools @ file:///home/conda/feedstock_root/build_artifacts/httptools_1602325995818/work
+httpx==0.13.3
+hyperframe==5.2.0
+pycparser==2.20
+pydantic==1.7.3
+python-dotenv==0.14.0
+python-telegram-bot==12.8
+PyYAML==5.3.1
+rfc3986==1.4.0
+six==1.15.0
+sniffio==1.1.0
+starlette==0.13.6
+tornado==6.0.4
+tqdm==4.50.2
+uvicorn==0.13.2
+uvloop==0.14.0
+watchgod @ file:///home/conda/feedstock_root/build_artifacts/watchgod_1592453122359/work
+websockets @ file:///home/conda/feedstock_root/build_artifacts/websockets_1602327018333/work
