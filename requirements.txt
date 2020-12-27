@@ -26,3 +26,4 @@ tornado==6.0.4
 tqdm==4.50.2
 uvicorn==0.13.2
 uvloop==0.14.0
+python-telegram-bot

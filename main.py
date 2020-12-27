@@ -4,6 +4,6 @@ from leela import core
 app = FastAPI()
 
 
-@app.get("/")
-async def root():
-    return core.main()
+@app.on_event("startup")
+async def startup():
+    await core.main()
