@@ -6,6 +6,7 @@ def welcome(update, context, new_member):
     #user_name = new_member.username
     #mention = "["+user_name+"](tg://user?id="+str(user_id)+")"
     #print(bool(user_id))
+    import telegram
     if new_member.first_name != 'leelabot':
         context.bot.send_message(chat_id=update.effective_chat.id, 
                                             text= "Olá, " + str(new_member.first_name) + "!" +
