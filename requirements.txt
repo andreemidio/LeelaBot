@@ -26,5 +26,3 @@ tornado==6.0.4
 tqdm==4.50.2
 uvicorn==0.13.2
 uvloop==0.14.0
-watchgod @ file:///home/conda/feedstock_root/build_artifacts/watchgod_1592453122359/work
-websockets @ file:///home/conda/feedstock_root/build_artifacts/websockets_1602327018333/work
