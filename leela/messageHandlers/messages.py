@@ -13,7 +13,7 @@ def welcome(update, context, new_member):
                                             "\nLeia as regras na descrição do grupo!" +
                                             "\n\nConheça nosso repositório de conteúdo gratuito: https://github.com/dev4lab/tutoriais-tecnologia" +
                                             "\n\nTemos ~~tequila~~ artigos semanalmente em nosso blog: https://dev4lab.github.io", 
-                                            parse_mode="Markdown")
+                                            parse_mode=telegram.ParseMode.MARKDOWN_V2)
     else:
         context.bot.send_message(chat_id=update.effective_chat.id,
                                  text="Olá, pessoal! Meu nome é Leela. Estou aqui para ajudar!")
