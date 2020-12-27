@@ -6,7 +6,7 @@ def welcome(update, context, new_member):
     #user_name = new_member.username
     #mention = "["+user_name+"](tg://user?id="+str(user_id)+")"
     #print(bool(user_id))
-    from telegram.parsemode.ParseMode import MARKDOWN_V2
+    from telegram.parsemode import ParseMode
 
     message = text_markdown_v2_urled()
     if new_member.first_name != 'leelabot':
@@ -16,7 +16,7 @@ def welcome(update, context, new_member):
                                             "\nLeia as regras na descrição do grupo!" +
                                             "\n\nConheça nosso repositório de conteúdo gratuito: https://github.com/dev4lab/tutoriais-tecnologia" +
                                             "\n\nTemos ~~tequila~~ artigos semanalmente em nosso blog: https://dev4lab.github.io",
-                                            parse_mode=MARKDOWN_V2)
+                                            parse_mode=ParseMode.MARKDOWN_V2)
     else:
         context.bot.send_message(chat_id=update.effective_chat.id,
                                  text="Olá, pessoal! Meu nome é Leela. Estou aqui para ajudar!")
