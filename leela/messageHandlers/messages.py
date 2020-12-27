@@ -7,16 +7,14 @@ def welcome(update, context, new_member):
     #mention = "["+user_name+"](tg://user?id="+str(user_id)+")"
     #print(bool(user_id))
     from telegram.parsemode import ParseMode
-
-    message = text_markdown_v2_urled()
     if new_member.first_name != 'leelabot':
         context.bot.send_message(chat_id=update.effective_chat.id, 
-                                            text= "Olá, " + str(new_member.first_name) + "!" +
-                                            " Seja bem vindo à Comunidade Dev4.0!\n" +
-                                            "\nLeia as regras na descrição do grupo!" +
-                                            "\n\nConheça nosso repositório de conteúdo gratuito: https://github.com/dev4lab/tutoriais-tecnologia" +
-                                            "\n\nTemos ~~tequila~~ artigos semanalmente em nosso blog: https://dev4lab.github.io",
-                                            parse_mode=ParseMode.MARKDOWN_V2)
+                                            text= 'Olá, ' + str(new_member.first_name) + '!' +
+                                            'Seja bem vindo à Comunidade Dev4.0!\n' +
+                                            '\nLeia as regras na descrição do grupo!' +
+                                            '\n\nTemos <s>tequila</s> artigos semanalmente em nosso blog: https://dev4lab.github.io' +
+                                            '\n\nConheça nosso repositório de conteúdo gratuito: https://github.com/dev4lab/tutoriais-tecnologia',
+                                            parse_mode=ParseMode.HTML)
     else:
         context.bot.send_message(chat_id=update.effective_chat.id,
                                  text="Olá, pessoal! Meu nome é Leela. Estou aqui para ajudar!")

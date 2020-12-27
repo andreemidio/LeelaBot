@@ -17,16 +17,16 @@ def main():
     start_handler = CommandHandler('start', start)
     dispatcher.add_handler(start_handler)
 
-    updater.start_webhook(listen="0.0.0.0",
-                           port=int(PORT),
-                           url_path=TOKEN)
-    updater.bot.setWebhook('https://leela-bot.herokuapp.com/' + TOKEN)
+    #updater.start_webhook(listen="0.0.0.0",
+    #                       port=int(PORT),
+    #                       url_path=TOKEN)
+    #updater.bot.setWebhook('https://leela-bot.herokuapp.com/' + TOKEN)
 
     echo_handler = MessageHandler(Filters.text & (~Filters.command), messages.echo)
     dispatcher.add_handler(echo_handler)
     sys_handler = MessageHandler(Filters.status_update, messages.empty_message)
     dispatcher.add_handler(sys_handler)
 
-    #updater.start_polling()
+    updater.start_polling()
 
-    #updater.idle()
+    updater.idle()
