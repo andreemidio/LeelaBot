@@ -12,7 +12,8 @@ def welcome(update, context, new_member):
                                             " Seja bem vindo à Comunidade Dev4.0!\n" +
                                             "\nLeia as regras na descrição do grupo!" +
                                             "\n\nConheça nosso repositório de conteúdo gratuito: https://github.com/dev4lab/tutoriais-tecnologia" +
-                                            "\n\nTemos ~tequila~ artigos semanalmente em nosso blog: dev4lab.github.io", parse_mode="Markdown")
+                                            "\n\nTemos ~~tequila~~ artigos semanalmente em nosso blog: https://dev4lab.github.io", 
+                                            parse_mode="Markdown")
     else:
         context.bot.send_message(chat_id=update.effective_chat.id,
                                  text="Olá, pessoal! Meu nome é Leela. Estou aqui para ajudar!")
@@ -20,8 +21,7 @@ def welcome(update, context, new_member):
 
 def goodbye(update, context):
     context.bot.send_message(chat_id=update.effective_chat.id, 
-                                        text= "Este é o pior tipo de discriminação...\n"+
-                                                "DISCRIMINAÇÃO CONTRA MIM!")
+                                        text= "Saiu e não pagou nem uma uma cerveja pra nós!")
 
 
 def empty_message(update, context):
