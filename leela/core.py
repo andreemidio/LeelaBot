@@ -10,7 +10,6 @@ def start(update, context):
                                     text="Oi, Eu sou Leela! Já tem seu chip de profissão?")
 
 def main():
-    PORT = int(os.environ.get('PORT', 5000))
     updater = Updater(token=TOKEN, use_context=True)
     dispatcher = updater.dispatcher
 
@@ -18,7 +17,7 @@ def main():
     dispatcher.add_handler(start_handler)
 
     updater.start_webhook(listen="0.0.0.0",
-                           port=int(PORT),
+                           port=int('$PORT'),
                            url_path=TOKEN)
     updater.bot.setWebhook('https://leela-bot.herokuapp.com/' + TOKEN)
 
