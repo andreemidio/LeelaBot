@@ -2,7 +2,7 @@ from telegram.ext import Updater, CommandHandler, MessageHandler, Filters
 from leela.messageHandlers import messages
 import os
 
-TOKEN = ''
+TOKEN = '1271856756:AAE9QiL22JIgdWIxWqM4qzAJL9XlrmUm6ug'
 
 
 def start(update, context):
