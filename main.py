@@ -1,5 +1,6 @@
 from fastapi import FastAPI
-from leela import core
+
+import core
 
 app = FastAPI()
 
