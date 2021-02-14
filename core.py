@@ -5,7 +5,7 @@ from telegram.ext import Updater, CommandHandler, MessageHandler, Filters
 
 from leela.messageHandlers import messages
 from request import DontStopmeNOW
-from settings import TOKEN
+# from settings import TOKEN
 
 PORT = int(os.environ.get('PORT', 5000))
 
@@ -15,6 +15,7 @@ logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s
 
 logger = logging.getLogger(__name__)
 
+TOKEN='1271856756:AAE9QiL22JIgdWIxWqM4qzAJL9XlrmUm6ug'
 
 def start(update, context):
     context.bot.send_message(chat_id=update.effective_chat.id,
