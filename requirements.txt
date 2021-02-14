@@ -12,7 +12,6 @@ cryptography==3.2
 decorator==4.4.2
 dnspython==2.0.0
 email-validator==1.1.2
-
 googletrans==3.0.0
 graphene==2.1.8
 graphql-core==2.3.2
@@ -49,6 +48,5 @@ starlette==0.13.6
 tornado==6.0.4
 ujson==3.2.0
 urllib3==1.25.10
-
 watchgod==0.6
 websockets==8.1
